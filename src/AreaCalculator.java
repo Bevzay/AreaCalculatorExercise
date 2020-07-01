@@ -1,7 +1,7 @@
 public class AreaCalculator {
 
     /*
-     * Write a method named arena with one double parameter named radius
+     * Write a method named area with one double parameter named radius
      *
      * The method needs to return a double value that represents the area of a circle
      *
@@ -16,5 +16,13 @@ public class AreaCalculator {
      * - area of triangle: x * y
      * - area of circle: radius * radius * PI
      */
+
+    public static double area(double radius) {
+        if(radius < 0) {
+            return -1.0;
+        } else {
+            return Math.PI * radius * radius;
+        }
+    }
 
 }
